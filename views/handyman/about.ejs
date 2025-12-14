@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn about John's Professional Handyman Services, our experience, and commitment to quality work."
+    />
+    <link rel="icon" type="image/png" href="/static/fav.png" />
+
+    <link
+      rel="preload"
+      href="/static/highlight.js/railscasts.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+
+    <noscript>
+      <link rel="stylesheet" href="/static/highlight.js/railscasts.min.css" />
+    </noscript>
+
+    <link href="/static/css/common.css" rel="stylesheet" />
+    <link href="/static/css/home.css" rel="stylesheet" />
+    
+    <!-- Custom handyman styles -->
+    <style>
+      .handyman-header {
+        background-color: #2c3e50;
+        color: white;
+        padding: 1rem;
+      }
+      
+      .handyman-section {
+        padding: 3rem 1rem;
+      }
+      
+      .about-content {
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+      
+      .team-member {
+        display: flex;
+        align-items: center;
+        margin: 2rem 0;
+        padding: 1.5rem;
+        border-radius: 8px;
+        background: #f8f9fa;
+      }
+      
+      .team-photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 1.5rem;
+      }
+      
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 5px;
+        transition: background-color 0.3s;
+      }
+      
+      .btn:hover {
+        background-color: #2980b9;
+      }
+      
+      .btn-primary {
+        background-color: #27ae60;
+      }
+      
+      .btn-primary:hover {
+        background-color: #219653;
+      }
+      
+      .btn-secondary {
+        background-color: #e74c3c;
+      }
+      
+      .btn-secondary:hover {
+        background-color: #c0392b;
+      }
+      
+      footer {
+        background-color: #2c3e50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+      
+      .hero-banner {
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/static/images/tools3.jpg') center/cover;
+        color: white;
+        text-align: center;
+        padding: 4rem 1rem;
+      }
+      
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+        margin: 2rem 0;
+      }
+      
+      .stat-box {
+        text-align: center;
+        padding: 1.5rem;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+    </style>
+
+    <script src="/static/highlight.js/highlight.min.js"></script>
+
+    <script defer src="/static/js/common.js"></script>
+    <script defer src="/static/js/main.js"></script>
+
+    <title>About - John's Professional Handyman Services</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="handyman-header">
+      <nav style="display: flex; justify-content: space-between; align-items: center;">
+        <div class="logo">
+          <a href="/" style="color: white; text-decoration: none; font-size: 1.5rem;"> handyman<b>SERVICES</b></a>
+        </div>
+        <ul style="display: flex; list-style: none; margin: 0; padding: 0; gap: 1rem;">
+          <li><a href="/handyman" style="color: white; text-decoration: none;">Home</a></li>
+          <li><a href="/handyman/services" style="color: white; text-decoration: none;">Services</a></li>
+          <li><a href="/handyman/portfolio" style="color: white; text-decoration: none;">Portfolio</a></li>
+          <li><a href="/handyman/about" style="color: white; text-decoration: none; font-weight: bold;">About</a></li>
+          <li><a href="/handyman/contact" style="color: white; text-decoration: none;">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Banner -->
+      <section class="hero-banner">
+        <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">About Our Company</h1>
+        <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto;">Learn about our journey, values, and commitment to excellence</p>
+      </section>
+
+      <!-- About Section -->
+      <section class="handyman-section">
+        <div class="about-content">
+          <h2 style="text-align: center; margin-bottom: 2rem;">Our Story</h2>
+          
+          <p>Founded in 2010, John's Professional Handyman Services began with a simple mission: to provide reliable, high-quality home repair and improvement services at fair prices. What started as a one-person operation has grown into a trusted name in our community, known for exceptional craftsmanship and customer service.</p>
+          
+          <p>Over the past decade, we've completed thousands of projects, from minor repairs to major renovations, always maintaining our commitment to excellence. Our reputation has been built on word-of-mouth recommendations from satisfied customers, and we continue to take pride in every job we complete.</p>
+          
+          <div class="stats">
+            <div class="stat-box">
+              <h3 style="font-size: 2.5rem; margin: 0;">10+</h3>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat-box">
+              <h3 style="font-size: 2.5rem; margin: 0;">2500+</h3>
+              <p>Projects Completed</p>
+            </div>
+            <div class="stat-box">
+              <h3 style="font-size: 2.5rem; margin: 0;">98%</h3>
+              <p>Client Satisfaction</p>
+            </div>
+            <div class="stat-box">
+              <h3 style="font-size: 2.5rem; margin: 0;">4.9</h3>
+              <p>Avg. Rating</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section class="handyman-section" style="background-color: #f8f9fa;">
+        <div style="max-width: 1000px; margin: 0 auto;">
+          <h2 style="text-align: center; margin-bottom: 2rem;">Meet Our Team</h2>
+          
+          <div class="team-member">
+            <img src="https://via.placeholder.com/150x150/3498db/ffffff?text=John+D." alt="John Doe" class="team-photo">
+            <div>
+              <h3>John Doe - Owner & Lead Technician</h3>
+              <p>With over 15 years of hands-on experience in residential and commercial repairs, John brings expertise in plumbing, electrical work, carpentry, and general maintenance. He personally oversees every project to ensure the highest quality standards.</p>
+              <p>Certifications: Licensed Plumber, Electrical Safety Certified, OSHA Safety Trained</p>
+            </div>
+          </div>
+          
+          <div class="team-member">
+            <img src="https://via.placeholder.com/150x150/e74c3c/ffffff?text=Mike+S." alt="Mike Smith" class="team-photo">
+            <div>
+              <h3>Mike Smith - Senior Carpenter</h3>
+              <p>Mike specializes in carpentry, finish work, and custom installations. With 12 years of experience, he excels at creating beautiful and functional solutions for our clients' needs.</p>
+              <p>Certifications: Certified Carpenter, Woodworking Specialist</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Values Section -->
+      <section class="handyman-section">
+        <div style="max-width: 1000px; margin: 0 auto;">
+          <h2 style="text-align: center; margin-bottom: 2rem;">Our Core Values</h2>
+          
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div style="text-align: center; padding: 1.5rem; border: 1px solid #ddd; border-radius: 8px;">
+              <h3>Quality Craftsmanship</h3>
+              <p>We never cut corners and always use the best materials and techniques to ensure lasting results.</p>
+            </div>
+            <div style="text-align: center; padding: 1.5rem; border: 1px solid #ddd; border-radius: 8px;">
+              <h3>Honest Pricing</h3>
+              <p>No hidden fees or surprise charges. We provide clear estimates before starting any work.</p>
+            </div>
+            <div style="text-align: center; padding: 1.5rem; border: 1px solid #ddd; border-radius: 8px;">
+              <h3>Reliability</h3>
+              <p>We show up on time, complete projects as scheduled, and stand behind our work with a satisfaction guarantee.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section class="handyman-section" style="background-color: #f8f9fa;">
+        <div style="max-width: 1000px; margin: 0 auto;">
+          <h2 style="text-align: center; margin-bottom: 2rem;">Certifications & Insurance</h2>
+          
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; text-align: center;">
+            <div style="padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+              <h3>General Contractor</h3>
+              <p>Licensed #GC-12345</p>
+            </div>
+            <div style="padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+              <h3>Plumbing License</h3>
+              <p>Licensed #PL-67890</p>
+            </div>
+            <div style="padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+              <h3>General Liability</h3>
+              <p>Insured up to $2M</p>
+            </div>
+            <div style="padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+              <h3>Workers Comp</h3>
+              <p>Full coverage</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="handyman-section">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+          <h2>Ready to Start Your Project?</h2>
+          <p>Experience the difference of working with a team that truly cares about quality and customer satisfaction.</p>
+          <a href="/handyman/contact" class="btn btn-primary">Contact Us Today</a>
+          <a href="/handyman/services" class="btn">View Our Services</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2023 John's Professional Handyman Services. All rights reserved.</p>
+      <p>Call us: (555) 123-4567 | Email: info@handymanservices.com</p>
+    </footer>
+  </body>
+</html>

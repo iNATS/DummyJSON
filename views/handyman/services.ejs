@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Complete list of handyman services including plumbing, electrical work, painting, and more."
+    />
+    <link rel="icon" type="image/png" href="/static/fav.png" />
+
+    <link
+      rel="preload"
+      href="/static/highlight.js/railscasts.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+
+    <noscript>
+      <link rel="stylesheet" href="/static/highlight.js/railscasts.min.css" />
+    </noscript>
+
+    <link href="/static/css/common.css" rel="stylesheet" />
+    <link href="/static/css/home.css" rel="stylesheet" />
+    
+    <!-- Custom handyman styles -->
+    <style>
+      .handyman-header {
+        background-color: #2c3e50;
+        color: white;
+        padding: 1rem;
+      }
+      
+      .handyman-section {
+        padding: 3rem 1rem;
+      }
+      
+      .services-full-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin: 2rem 0;
+      }
+      
+      .service-card-full {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+      }
+      
+      .service-card-full:hover {
+        transform: translateY(-5px);
+      }
+      
+      .service-card-full h3 {
+        color: #2c3e50;
+        margin-top: 0;
+      }
+      
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 5px;
+        transition: background-color 0.3s;
+      }
+      
+      .btn:hover {
+        background-color: #2980b9;
+      }
+      
+      .btn-primary {
+        background-color: #27ae60;
+      }
+      
+      .btn-primary:hover {
+        background-color: #219653;
+      }
+      
+      .btn-secondary {
+        background-color: #e74c3c;
+      }
+      
+      .btn-secondary:hover {
+        background-color: #c0392b;
+      }
+      
+      footer {
+        background-color: #2c3e50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+      
+      .hero-banner {
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/static/images/tools2.jpg') center/cover;
+        color: white;
+        text-align: center;
+        padding: 4rem 1rem;
+      }
+    </style>
+
+    <script src="/static/highlight.js/highlight.min.js"></script>
+
+    <script defer src="/static/js/common.js"></script>
+    <script defer src="/static/js/main.js"></script>
+
+    <title>Services - John's Professional Handyman Services</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="handyman-header">
+      <nav style="display: flex; justify-content: space-between; align-items: center;">
+        <div class="logo">
+          <a href="/" style="color: white; text-decoration: none; font-size: 1.5rem;"> handyman<b>SERVICES</b></a>
+        </div>
+        <ul style="display: flex; list-style: none; margin: 0; padding: 0; gap: 1rem;">
+          <li><a href="/handyman" style="color: white; text-decoration: none;">Home</a></li>
+          <li><a href="/handyman/services" style="color: white; text-decoration: none; font-weight: bold;">Services</a></li>
+          <li><a href="/handyman/portfolio" style="color: white; text-decoration: none;">Portfolio</a></li>
+          <li><a href="/handyman/about" style="color: white; text-decoration: none;">About</a></li>
+          <li><a href="/handyman/contact" style="color: white; text-decoration: none;">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Banner -->
+      <section class="hero-banner">
+        <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Our Complete Service List</h1>
+        <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto;">We offer a wide range of handyman services to meet all your home repair and improvement needs</p>
+      </section>
+
+      <!-- Services Section -->
+      <section class="handyman-section">
+        <div style="max-width: 1200px; margin: 0 auto;">
+          <h2 style="text-align: center; margin-bottom: 2rem;">Full Range of Services</h2>
+          
+          <div class="services-full-grid">
+            <div class="service-card-full">
+              <h3>Plumbing Repairs</h3>
+              <p>Leak detection and repair • Faucet and fixture replacement • Toilet repair and installation • Drain cleaning • Garbage disposal repair • Water heater maintenance</p>
+              <p><strong>Starting at $85/hr</strong></p>
+            </div>
+            
+            <div class="service-card-full">
+              <h3>Electrical Work</h3>
+              <p>Outlet and switch installation • Light fixture installation • Ceiling fan installation • Electrical panel inspection • Smoke detector installation • Basic wiring repairs</p>
+              <p><strong>Starting at $95/hr</strong></p>
+            </div>
+            
+            <div class="service-card-full">
+              <h3>Painting Services</h3>
+              <p>Interior wall painting • Exterior painting • Cabinet painting • Wall preparation • Texture repair • Color consultation</p>
+              <p><strong>Starting at $45/sq ft</strong></p>
+            </div>
+            
+            <div class="service-card-full">
+              <h3>Carpentry & Woodwork</h3>
+              <p>Trim and molding installation • Deck construction and repair • Fence installation • Custom shelving • Door and window repair • Wood finishing</p>
+              <p><strong>Starting at $75/hr</strong></p>
+            </div>
+            
+            <div class="service-card-full">
+              <h3>Furniture Assembly</h3>
+              <p>Flat-pack furniture assembly • IKEA furniture setup • Outdoor furniture assembly • Custom furniture building • Kitchen cabinet assembly</p>
+              <p><strong>Starting at $65/hr</strong></p>
+            </div>
+            
+            <div class="service-card-full">
+              <h3>General Repairs</h3>
+              <p>Drywall patching and repair • Tile and grout repair • Caulking • Weatherstripping • Siding repair • Gutter cleaning and repair</p>
+              <p><strong>Starting at $70/hr</strong></p>
+            </div>
+            
+            <div class="service-card-full">
+              <h3>Installation Services</h3>
+              <p>Shelf installation • TV mounting • Curtain rod installation • Thermostat installation • Bathroom accessories • Hardware installation</p>
+              <p><strong>Starting at $60/hr</strong></p>
+            </div>
+            
+            <div class="service-card-full">
+              <h3>Maintenance & Upkeep</h3>
+              <p>Seasonal maintenance • Preventive maintenance plans • Home inspection • Small repairs • Yard maintenance • Snow removal</p>
+              <p><strong>Starting at $80/hr</strong></p>
+            </div>
+          </div>
+          
+          <div style="text-align: center; margin-top: 3rem;">
+            <a href="/handyman/contact" class="btn btn-primary">Request Service</a>
+            <a href="/handyman/portfolio" class="btn">View Our Work</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Info -->
+      <section class="handyman-section" style="background-color: #f8f9fa;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+          <h2 style="text-align: center; margin-bottom: 2rem;">Pricing Information</h2>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div style="text-align: center; padding: 1.5rem; background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+              <h3>Hourly Rates</h3>
+              <p>Most jobs billed hourly with transparent pricing</p>
+              <p><strong>$70-$95/hour</strong></p>
+            </div>
+            <div style="text-align: center; padding: 1.5rem; background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+              <h3>Flat Rate Jobs</h3>
+              <p>Certain services offered at fixed prices</p>
+              <p>Contact us for a quote</p>
+            </div>
+            <div style="text-align: center; padding: 1.5rem; background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+              <h3>Emergency Service</h3>
+              <p>Available for urgent repairs</p>
+              <p><strong>25% surcharge</strong></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2023 John's Professional Handyman Services. All rights reserved.</p>
+      <p>Call us: (555) 123-4567 | Email: info@handymanservices.com</p>
+    </footer>
+  </body>
+</html>

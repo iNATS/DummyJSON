@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Professional handyman services offering repairs, maintenance, and installations for residential and commercial properties."
+    />
+    <link rel="icon" type="image/png" href="/static/fav.png" />
+
+    <link
+      rel="preload"
+      href="/static/highlight.js/railscasts.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+
+    <noscript>
+      <link rel="stylesheet" href="/static/highlight.js/railscasts.min.css" />
+    </noscript>
+
+    <link href="/static/css/common.css" rel="stylesheet" />
+    <link href="/static/css/home.css" rel="stylesheet" />
+    
+    <!-- Custom handyman styles -->
+    <style>
+      .handyman-header {
+        background-color: #2c3e50;
+        color: white;
+        padding: 1rem;
+      }
+      
+      .handyman-hero {
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/static/images/tools.jpg') center/cover;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+      }
+      
+      .handyman-section {
+        padding: 3rem 1rem;
+      }
+      
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin: 2rem 0;
+      }
+      
+      .service-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1.5rem;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+      
+      .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+      }
+      
+      .portfolio-item {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+      
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 5px;
+        transition: background-color 0.3s;
+      }
+      
+      .btn:hover {
+        background-color: #2980b9;
+      }
+      
+      .btn-primary {
+        background-color: #27ae60;
+      }
+      
+      .btn-primary:hover {
+        background-color: #219653;
+      }
+      
+      .btn-secondary {
+        background-color: #e74c3c;
+      }
+      
+      .btn-secondary:hover {
+        background-color: #c0392b;
+      }
+      
+      footer {
+        background-color: #2c3e50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+    </style>
+
+    <script src="/static/highlight.js/highlight.min.js"></script>
+
+    <script defer src="/static/js/common.js"></script>
+    <script defer src="/static/js/main.js"></script>
+
+    <title>John's Professional Handyman Services</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="handyman-header">
+      <nav style="display: flex; justify-content: space-between; align-items: center;">
+        <div class="logo">
+          <a href="/" style="color: white; text-decoration: none; font-size: 1.5rem;"> handyman<b>SERVICES</b></a>
+        </div>
+        <ul style="display: flex; list-style: none; margin: 0; padding: 0; gap: 1rem;">
+          <li><a href="/handyman" style="color: white; text-decoration: none;">Home</a></li>
+          <li><a href="/handyman/services" style="color: white; text-decoration: none;">Services</a></li>
+          <li><a href="/handyman/portfolio" style="color: white; text-decoration: none;">Portfolio</a></li>
+          <li><a href="/handyman/about" style="color: white; text-decoration: none;">About</a></li>
+          <li><a href="/handyman/contact" style="color: white; text-decoration: none;">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="handyman-hero">
+        <div style="max-width: 800px; padding: 0 1rem;">
+          <h1 style="font-size: 3rem; margin-bottom: 1rem;">Professional Handyman Services</h1>
+          <p style="font-size: 1.5rem; margin-bottom: 2rem;">Quality repairs, installations, and maintenance for your home or business</p>
+          <div>
+            <a href="/handyman/services" class="btn btn-primary">View Services</a>
+            <a href="/handyman/contact" class="btn">Get a Quote</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Preview -->
+      <section class="handyman-section" style="background-color: #f8f9fa;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+          <h2 style="text-align: center; margin-bottom: 2rem;">Our Popular Services</h2>
+          <div class="services-grid">
+            <div class="service-card">
+              <h3>Plumbing Repairs</h3>
+              <p>Fixing leaks, unclogging drains, replacing fixtures, and more.</p>
+            </div>
+            <div class="service-card">
+              <h3>Electrical Work</h3>
+              <p>Installing outlets, changing switches, ceiling fans, and basic electrical work.</p>
+            </div>
+            <div class="service-card">
+              <h3>Painting</h3>
+              <p>Interior and exterior painting, touch-ups, and wall preparation.</p>
+            </div>
+            <div class="service-card">
+              <h3>Furniture Assembly</h3>
+              <p>Assembling IKEA furniture, shelving units, and other household items.</p>
+            </div>
+          </div>
+          <div style="text-align: center; margin-top: 2rem;">
+            <a href="/handyman/services" class="btn">See All Services</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us -->
+      <section class="handyman-section">
+        <div style="max-width: 1200px; margin: 0 auto;">
+          <h2 style="text-align: center; margin-bottom: 2rem;">Why Choose Our Services</h2>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div style="text-align: center;">
+              <h3>Experienced</h3>
+              <p>Over 10 years of hands-on experience in residential and commercial repairs.</p>
+            </div>
+            <div style="text-align: center;">
+              <h3>Reliable</h3>
+              <p>On-time service with guaranteed quality workmanship on every job.</p>
+            </div>
+            <div style="text-align: center;">
+              <h3>Affordable</h3>
+              <p>Competitive pricing with no hidden fees or surprise charges.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Preview -->
+      <section class="handyman-section" style="background-color: #f8f9fa;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+          <h2 style="text-align: center; margin-bottom: 2rem;">Recent Projects</h2>
+          <div class="portfolio-grid">
+            <div class="portfolio-item">
+              <img src="https://via.placeholder.com/300x200/4a90e2/ffffff?text=Kitchen+Remodel" alt="Kitchen Remodel" style="width: 100%; height: 200px; object-fit: cover;">
+              <div style="padding: 1rem;">
+                <h3>Kitchen Cabinet Repair</h3>
+                <p>Fixed damaged cabinet doors and replaced hinges.</p>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <img src="https://via.placeholder.com/300x200/50c878/ffffff?text=Bathroom+Renovation" alt="Bathroom Renovation" style="width: 100%; height: 200px; object-fit: cover;">
+              <div style="padding: 1rem;">
+                <h3>Bathroom Fixture Installation</h3>
+                <p>Installed new vanity, toilet, and shower components.</p>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <img src="https://via.placeholder.com/300x200/ff6b6b/ffffff?text=Deck+Repair" alt="Deck Repair" style="width: 100%; height: 200px; object-fit: cover;">
+              <div style="padding: 1rem;">
+                <h3>Deck Restoration</h3>
+                <p>Repaired damaged boards and applied weather-resistant sealant.</p>
+              </div>
+            </div>
+          </div>
+          <div style="text-align: center; margin-top: 2rem;">
+            <a href="/handyman/portfolio" class="btn">View Full Portfolio</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact CTA -->
+      <section class="handyman-section" style="background-color: #2c3e50; color: white; text-align: center;">
+        <div style="max-width: 800px; margin: 0 auto;">
+          <h2>Need a Professional Handyman?</h2>
+          <p style="font-size: 1.2rem; margin-bottom: 2rem;">Contact us today for a free estimate on your project!</p>
+          <a href="/handyman/contact" class="btn" style="background-color: white; color: #2c3e50;">Get in Touch</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2023 John's Professional Handyman Services. All rights reserved.</p>
+      <p>Call us: (555) 123-4567 | Email: info@handymanservices.com</p>
+    </footer>
+  </body>
+</html>
