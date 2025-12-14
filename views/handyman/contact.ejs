@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact John's Professional Handyman Services for estimates, questions, or to schedule a service appointment."
+    />
+    <link rel="icon" type="image/png" href="/static/fav.png" />
+
+    <link
+      rel="preload"
+      href="/static/highlight.js/railscasts.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+
+    <noscript>
+      <link rel="stylesheet" href="/static/highlight.js/railscasts.min.css" />
+    </noscript>
+
+    <link href="/static/css/common.css" rel="stylesheet" />
+    <link href="/static/css/home.css" rel="stylesheet" />
+    
+    <!-- Custom handyman styles -->
+    <style>
+      .handyman-header {
+        background-color: #2c3e50;
+        color: white;
+        padding: 1rem;
+      }
+      
+      .handyman-section {
+        padding: 3rem 1rem;
+      }
+      
+      .contact-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+      
+      .contact-info {
+        background: #f8f9fa;
+        padding: 2rem;
+        border-radius: 8px;
+      }
+      
+      .contact-form {
+        background: white;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+      
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
+      
+      .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+      }
+      
+      .form-group input,
+      .form-group select,
+      .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+      }
+      
+      .form-group textarea {
+        height: 150px;
+        resize: vertical;
+      }
+      
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 5px;
+        transition: background-color 0.3s;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+      
+      .btn:hover {
+        background-color: #2980b9;
+      }
+      
+      .btn-primary {
+        background-color: #27ae60;
+      }
+      
+      .btn-primary:hover {
+        background-color: #219653;
+      }
+      
+      .btn-secondary {
+        background-color: #e74c3c;
+      }
+      
+      .btn-secondary:hover {
+        background-color: #c0392b;
+      }
+      
+      footer {
+        background-color: #2c3e50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+      
+      .hero-banner {
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/static/images/tools4.jpg') center/cover;
+        color: white;
+        text-align: center;
+        padding: 4rem 1rem;
+      }
+      
+      .hours {
+        margin-top: 1.5rem;
+      }
+    </style>
+
+    <script src="/static/highlight.js/highlight.min.js"></script>
+
+    <script defer src="/static/js/common.js"></script>
+    <script defer src="/static/js/main.js"></script>
+
+    <title>Contact - John's Professional Handyman Services</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="handyman-header">
+      <nav style="display: flex; justify-content: space-between; align-items: center;">
+        <div class="logo">
+          <a href="/" style="color: white; text-decoration: none; font-size: 1.5rem;"> handyman<b>SERVICES</b></a>
+        </div>
+        <ul style="display: flex; list-style: none; margin: 0; padding: 0; gap: 1rem;">
+          <li><a href="/handyman" style="color: white; text-decoration: none;">Home</a></li>
+          <li><a href="/handyman/services" style="color: white; text-decoration: none;">Services</a></li>
+          <li><a href="/handyman/portfolio" style="color: white; text-decoration: none;">Portfolio</a></li>
+          <li><a href="/handyman/about" style="color: white; text-decoration: none;">About</a></li>
+          <li><a href="/handyman/contact" style="color: white; text-decoration: none; font-weight: bold;">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Banner -->
+      <section class="hero-banner">
+        <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Get in Touch</h1>
+        <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto;">Contact us today for a free estimate or to schedule your service appointment</p>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="handyman-section">
+        <div class="contact-container">
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Phone:</strong> (555) 123-4567</p>
+            <p><strong>Email:</strong> info@handymanservices.com</p>
+            <p><strong>Service Area:</strong> Greater Metro Area</p>
+            
+            <div class="hours">
+              <h3>Business Hours</h3>
+              <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+              <p>Saturday: 9:00 AM - 4:00 PM</p>
+              <p>Sunday: Closed</p>
+            </div>
+            
+            <div style="margin-top: 2rem;">
+              <h3>Emergency Service</h3>
+              <p>For urgent repairs outside business hours, please call our emergency line: (555) 987-6543</p>
+              <p style="font-size: 0.9rem; color: #e74c3c;">Please note: Emergency service may incur additional fees.</p>
+            </div>
+            
+            <div style="margin-top: 2rem;">
+              <h3>Service Area</h3>
+              <p>We proudly serve the following areas:</p>
+              <ul style="padding-left: 1.5rem;">
+                <li>Metro City</li>
+                <li>Suburbia</li>
+                <li>Downtown District</li>
+                <li>Westside Communities</li>
+                <li>North Valley Area</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <h2>Request a Service</h2>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="service">Service Needed</label>
+                <select id="service" name="service" required>
+                  <option value="">Select a service</option>
+                  <option value="plumbing">Plumbing Repairs</option>
+                  <option value="electrical">Electrical Work</option>
+                  <option value="painting">Painting</option>
+                  <option value="carpentry">Carpentry & Woodwork</option>
+                  <option value="assembly">Furniture Assembly</option>
+                  <option value="general">General Repairs</option>
+                  <option value="installation">Installation Services</option>
+                  <option value="maintenance">Maintenance & Upkeep</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="projectDetails">Project Details</label>
+                <textarea id="projectDetails" name="projectDetails" placeholder="Please describe your project, including specific issues or requirements..." required></textarea>
+              </div>
+              
+              <div class="form-group">
+                <label for="preferredDate">Preferred Date</label>
+                <input type="date" id="preferredDate" name="preferredDate">
+              </div>
+              
+              <div class="form-group">
+                <label for="budget">Estimated Budget (Optional)</label>
+                <input type="text" id="budget" name="budget" placeholder="e.g., $200-$500">
+              </div>
+              
+              <button type="submit" class="btn btn-primary">Submit Request</button>
+            </form>
+          </div>
+        </div>
+        
+        <!-- Map Placeholder -->
+        <div style="max-width: 1000px; margin: 3rem auto 0; padding: 2rem; background: #f8f9fa; border-radius: 8px;">
+          <h2 style="text-align: center; margin-bottom: 1rem;">Our Location</h2>
+          <div style="background: #e9ecef; height: 300px; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+            <p>Map showing business location and service area</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2023 John's Professional Handyman Services. All rights reserved.</p>
+      <p>Call us: (555) 123-4567 | Email: info@handymanservices.com</p>
+    </footer>
+
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(this);
+        const data = Object.fromEntries(formData);
+        
+        // In a real application, you would send this data to a server
+        // For now, we'll just show an alert
+        alert('Thank you for your request! We will contact you shortly to discuss your project.');
+        
+        // Reset form
+        this.reset();
+      });
+    </script>
+  </body>
+</html>

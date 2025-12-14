@@ -15,6 +15,7 @@ const todoRoutes = require('./todo');
 const userRoutes = require('./user');
 const httpStatusRoutes = require('./http');
 const testRoutes = require('./test');
+const handymanRoutes = require('./handyman');
 
 // dynamic resource routes
 // no-dynamic-routes
@@ -30,5 +31,6 @@ router.use(['/todo', '/todos'], todoRoutes);
 router.use(['/user', '/users'], userRoutes);
 router.use(['/http', '/https'], httpStatusRoutes);
 router.use('/test', testRoutes);
+router.use('/handyman', handymanRoutes);
 
 module.exports = router;
